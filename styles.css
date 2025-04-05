@@ -1,50 +1,86 @@
-
 .container {
     width: 100%;
     max-width: 1200px;
-    padding:0 15px;
+    padding: 0 15px;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
 }
 
+/*HEADER*/
+.logo {
+    padding-top: 20px;
+    display: flex;
+}
+
+.logo a {
+    text-decoration: none;
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: rgb(95, 82, 82);
+}
+
+.navbar li {
+    float: right;
+}
+
 /*POST*/
 
-.post{
+.post {
     flex: 1;
-    margin:10px;
+    margin: 10px;
     background-color: antiquewhite;
 }
 
 
-img{
+img {
     max-width: 100%;
     height: auto;
 }
 
 /*SLIDER*/
 
-.slider-container{
-    position:relative;
+.slider-container {
+    position: relative;
     max-width: 100%;
-    margin:0 auto;
+    margin: 0 auto;
     overflow: hidden;
-}   
+}
 
 .slide {
     width: 100%;
-    height: 500px; 
+    height: 500px;
     position: absolute;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
-    top: 0;  
+    top: 0;
     left: 0;
 }
 
 .slider {
     width: 100%;
     position: relative;
-    height: 500px;  
+    height: 500px;
 }
 
 .slide:first-child {
@@ -75,7 +111,8 @@ img{
     box-sizing: border-box;
 }
 
-.prev-btn, .next-btn {
+.prev-btn,
+.next-btn {
     background: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
@@ -84,7 +121,7 @@ img{
     font-size: 18px;
 }
 
-.slider-dots{
+.slider-dots {
     position: absolute;
     bottom: 10px;
     left: 50%;
@@ -93,7 +130,7 @@ img{
     gap: 8px;
 }
 
-.dot{
+.dot {
     width: 12px;
     height: 12px;
     background-color: #bbb;
@@ -101,6 +138,6 @@ img{
     cursor: pointer;
 }
 
-.dot.active{
+.dot.active {
     background-color: #717171;
 }
