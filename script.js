@@ -1,9 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
     const slides = document.querySelectorAll('.slide');
     const dots = document.querySelectorAll('.dot');
-    const prevBtn = document.querySelector('.prev-btn');
-    const nextBtn = document.querySelector('.next-btn');
     let currentSlide = 0;
+    
 
     // 顯示當前幻燈片
     function showSlide(n) {
@@ -18,12 +17,11 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // 下一張幻燈片
-    function nextSlide() {
+    window.nextSlide = function() {
         showSlide(currentSlide + 1);
-    }
 
     // 上一張幻燈片
-    function prevSlide() {
+    window.prevSlide = function() {
         showSlide(currentSlide - 1);
     }
 
