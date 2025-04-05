@@ -1,0 +1,21 @@
+/* BODY */
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding:0 15px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    flex: 1;
+    margin:0 15px;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
