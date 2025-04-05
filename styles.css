@@ -5,7 +5,6 @@
     padding:0 15px;
     display: flex;
     justify-content: space-between;
-    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -13,7 +12,7 @@
 
 .post{
     flex: 1;
-    margin:10px 10px 10px 10px;
+    margin:10px;
     background-color: antiquewhite;
 }
 
@@ -32,17 +31,25 @@ img{
     overflow: hidden;
 }   
 
-.slider{
-    width: 100%;
-    position: relative;
-}
-
 .slide {
     width: 100%;
     height: 500px; 
     position: absolute;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
+    top: 0;  
+    left: 0;
+}
+
+.slider {
+    width: 100%;
+    position: relative;
+    height: 500px;  
+}
+
+.slide:first-child {
+    opacity: 1;
+    z-index: 1;
 }
 
 .slide.active {
@@ -68,7 +75,7 @@ img{
     box-sizing: border-box;
 }
 
-.prev, .next {
+.prev-btn, .next-btn {
     background: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
