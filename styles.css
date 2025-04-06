@@ -44,20 +44,6 @@
     float: right;
 }
 
-/*POST*/
-
-.post {
-    flex: 1;
-    margin: 10px;
-    background-color: antiquewhite;
-}
-
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
 /*SLIDER*/
 
 .slider-container {
@@ -140,4 +126,47 @@ img {
 
 .dot.active {
     background-color: #717171;
+}
+
+/*POST*/
+
+.post {
+    flex: 1;
+    margin: 10px;
+    background-color: rgb(164, 164, 164);
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.post-button {
+    background-color: rgb(95, 82, 82);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+}
+
+
+/*Banner*/
+
+.banner {
+    background-color: rgb(95, 82, 82);
+    color: white;
+    padding: 8px;
+    text-align: center;
+}
+
+.banner hr {
+    border: 1px solid white;
+    margin: 20px auto;
+    width:40%;
 }
