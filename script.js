@@ -4,7 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     menuToggle.addEventListener('click', () => {
         navLinks.classList.toggle('open');
-    })});
+    })
+});
 
 document.addEventListener('DOMContentLoaded', function () {
     const slides = document.querySelectorAll('.slide');
